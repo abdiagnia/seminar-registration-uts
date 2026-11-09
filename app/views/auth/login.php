@@ -3,14 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Login Admin - Seminar Registration</title>
+    <title>Login Admin - REGISTRASI SEMINAR</title>
     <link rel="stylesheet" href="<?= BASE_URL ?>/assets/style.css">
 </head>
 <body class="login-page">
     <main class="login-card">
-        <div class="brand-mark">SR</div>
+        <div class="brand-mark">RS</div>
 
-        <h1>Seminar Registration</h1>
+        <h1>Registrasi Seminar</h1>
         <p class="muted">Silakan masuk untuk mengelola peserta.</p>
 
         <?php if (!empty($error)): ?>
@@ -29,7 +29,7 @@
                 value="<?= htmlspecialchars($_POST['username'] ?? '') ?>"
             >
 
-            <label for="password">Password</label>
+            <label for="password">Your Password</label>
             <input
                 id="password"
                 type="password"
@@ -38,10 +38,9 @@
                 autocomplete="current-password"
             >
 
-            <button class="btn primary full" type="submit">Masuk</button>
+            <button class="btn primary full" type="submit">Go</button>
         </form>
 
-        <p class="hint">Akun awal: <b>admin</b> / <b>admin123</b></p>
     </main>
 </body>
 </html>
